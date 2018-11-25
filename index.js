@@ -52,6 +52,14 @@ class WP {
             if (data.id != null && data.id != '') {
                 url = webUrl + "/wp-json/wp/v2/posts/" + data.id;
             }
+            
+            if (data.page != null && data.page != '') {
+                 url += "&page=" + data.page;
+            }
+            
+            if (data.per_page != null && data.per_page != '') {
+                 url += "&per_page=" + data.per_page;
+            }
         }
 
 
