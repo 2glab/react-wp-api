@@ -36,7 +36,7 @@ class WP {
 
     /** {id:2, category:4, search:'Ani'}  */
     Posts(data) {
-        let url = webUrl + "/wp-json/wp/v2/posts";
+        let url = webUrl + "/wp-json/wp/v2/posts?";
         if (data) {
             if (data.search != null && data.search != '') {
                 url = webUrl + "/wp-json/wp/v2/posts?search=" + data.search;
